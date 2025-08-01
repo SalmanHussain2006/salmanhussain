@@ -680,3 +680,74 @@ body {
     padding-top: 2rem;
 }
 
+/* --- Extra Responsive Fixes --- */
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        padding: 4rem 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* For small phones */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline::before {
+        left: 12px;
+    }
+
+    .timeline-marker {
+        left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .contact-link {
+        padding: 1.25rem;
+        min-width: 100px;
+    }
+}
+
+/* Optional: Make nav responsive with wrapping instead of disappearing */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+        padding-top: 0.5rem;
+    }
+}
